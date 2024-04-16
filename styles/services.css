@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: rgb(102, 101, 101);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(8, 26, 71);
+    font-weight: bolder;
+}
+
+.logo i {
+    color: rgb(238, 170, 34);
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: rgb(3, 14, 38);
+}
+
+.navbar a:hover {
+    color: rgb(246, 179, 46);
+}
+
+body {
+    background-color: rgb(234, 230, 221);
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box,
+.doctors .box-container .box {
+    background: #f1ac0d;
+    border-radius: 15%;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 20px; 
+    margin-top: 30px;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+    color: rgb(8, 34, 66);
+    text-transform: uppercase;
+    margin-top: 170px;
+    letter-spacing: 2rem;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: #f8bd29;
+}
+
+.services .box-container .box i {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.services .box-container .box h3,
+.doctors .box-container .box h3 {
+    color: black;
+    font-size: 125%;
+    padding: 1rem 0;
+}
+
+.services .box-container .box p,
+.doctors .box-container .box p {
+    color: black;
+    font-size: 90%;
+    line-height: 2;
+}
+
+.doctors .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 4%;
+    margin-left: 1%;
+}
+
+.doctors .heading {
+    margin-top: 7%;
+}
+
+.doctors .box-container .box {
+    text-align: center;
+    background-color: rgb(8, 34, 66);
+    border-radius: 8%;
+    padding: 6%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
+
+.doctors .box-container .box img {
+    height: 20rem;
+    border: var(--border);
+    border-radius: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.doctors .box-container .box h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.doctors .box-container .box span {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.doctors .box-container .box .share {
+    padding-top: 2rem;
+}
+
+.doctors .box-container .box .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: .5rem;
+    border: var(--border);
+    margin: .3rem;
+}
+
+.doctors .box-container .box .share a:hover {
+    background-color: #f1ac0d;
+    color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+footer {
+    background-color: #0c0c4b;
+    color: #fff;
+    padding: 1rem 6rem; 
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer p {
+    margin-bottom: 0.8rem; 
+    color: #fff;
+}
+
+footer a {
+    color: #eeaa22;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

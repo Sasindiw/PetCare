@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Corrected box-shadow syntax */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: #081a47; /* Adjusted color */
+    font-weight: bold; /* Corrected font-weight property */
+}
+
+.header .logo i {
+    color: #eeaa22; /* Adjusted color */
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: #031e26; /* Adjusted color */
+
+    &:hover {
+        color: #f6b32e; /* Adjusted color */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #eeaa22; /* Adjusted background color */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 9%;
+    background-color: #17094c;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    height: 40px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #eeaa22; /* Adjusted background color */
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #80dfee;
+}
+
+button[type="reset"] {
+    background-color: #eeaa22; /* Adjusted background color */
+}
+
+button:hover[type="reset"] {
+    background-color: #82d9ed;
+}
+
+/* Styles for the heading inside the form */
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fefefe;
+    text-align: center;
+}
+
+form h1 i {
+    margin-right: 10px; /* Adjusted spacing between the icon and text */
+    color: #ffffff; /* Adjusted color of the paw icon */
+}
+
+footer {
+    background-color: #0c0c4b;
+    color: #fff;
+    padding: 1rem 6rem;
+    text-align: center;
+    margin-top: 13%;
+}
+
+footer p {
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+
+footer a {
+    color: #eeaa22;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,141 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/signupbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+.header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: rgb(102, 101, 101);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    
+    .logo{
+      font-size: 2rem;
+      color: rgb(8, 26, 71);
+      font-weight: bolder;
+    
+      i{
+        color:rgb(238, 170, 34)
+      }
+    }
+    .navbar a{
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      color:rgb(3, 14, 38);
+     
+    
+      &:hover{
+        color: rgb(246, 179, 46);
+      }
+    
+    }
+ }
+
+.signup {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #f5c400;
+    border-radius: 5px;
+    margin-top: 10%;
+    background-color: #ffcc00;
+}
+
+.signup h1 {
+    text-align: center;
+    font-size: 150%;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label {
+    margin-bottom: 5px;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="tel"],
+.signup input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup button[type="submit"] {
+    background-color: #040a63;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 7%;
+}
+
+.signup button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.link {
+  text-align: center;
+  margin-top: 4%;
+}
+
+
+footer {
+  background-color: #0c0c4b;
+  color: #fff;
+  padding: 1rem 6rem; 
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+footer p {
+  margin-bottom: 0.8rem; 
+  color: #fff;
+}
+
+footer a {
+  color: #eeaa22;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+

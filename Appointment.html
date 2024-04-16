@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzz n' Feathers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/appointment.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"> 
+        <i class="fas fa-dog"></i>
+        Fuzz n' Feathers
+    </a>
+    <nav class="navbar">
+        <a href="../html/index.html"><i class="fas fa-home"></i> HOME</a>
+        <a href="../html/about.html"><i class="fas fa-info-circle"></i> ABOUT</a>
+        <a href="../html/client.php"><i class="fas fa-user"></i> PROFILE</a>
+    </nav>
+</header>
+
+<form action="insert.php" method="post">
+    <h1><i class="fas fa-paw"></i> Book Your Appointment Now</h1>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contactNo">Contact Number:</label>
+    <input type="tel" id="contactNo" name="contactNo" required>
+
+    <label for="petType">Pet Type:</label>
+    <select id="petType" name="petType" required>
+        <option value="" disabled selected>Select Pet Type</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+    </select>
+
+    <label for="doctor">Select Doctor:</label>
+    <select id="doctor" name="doctor" required>
+        <option value="" disabled selected>Select Doctor</option>
+        <optgroup label="General Practice Veterinarian">
+            <option value="Dr. Imasha Perera">Dr. Imasha Perera</option>
+        </optgroup>
+        <optgroup label="Veterinary Surgeon">
+            <option value="Dr. Ravin Fernando">Dr. Ravin Fernando</option>
+        </optgroup>
+        <optgroup label="Veterinary Dermatologist">
+            <option value="Dr. Vishka Adikari">Dr. Vishka Adikari</option>
+        </optgroup>
+    </select>
+
+    <label for="category">Service Category:</label>
+    <select id="category" name="category" required>
+        <option value="" disabled selected>Select Category</option>
+        <optgroup label="General Practice Veterinarian">
+            <option value="Vet Consulting">Vet Consulting</option>
+            <option value="Dental">Dental</option>
+            <option value="Vaccination">Vaccination</option>
+            <option value="Emergency Services">Emergency Services</option>
+        </optgroup>
+        <optgroup label="Veterinary Surgeon">
+            <option value="Surgical procedures (including emergency surgeries)">Surgical procedures (including emergency surgeries)</option>
+            <option value="Diagnostic Imaging (for pre-surgical assessments)">Diagnostic Imaging (for pre-surgical assessments)</option>
+        </optgroup>
+        <optgroup label="Veterinary Dermatologist">
+            <option value="Dermatological consultations and treatments">Dermatological consultations and treatments</option>
+        </optgroup>
+    </select>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="symptoms">Symptoms:</label>
+    <input type="text" id="symptoms" name="symptoms" required>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var dateInput = document.getElementById('date');
+        
+        
+        dateInput.min = new Date().toISOString().split("T")[0];
+        
+      
+        dateInput.addEventListener('input', function() {
+            var selectedDate = new Date(this.value);
+            if (selectedDate.getDay() === 1 || selectedDate.getDay() === 5) {
+                this.setCustomValidity('Please select a date other than Monday or Friday.');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var timeInput = document.getElementById('time');
+        
+        
+        timeInput.addEventListener('input', function() {
+            var timeParts = this.value.split(':');
+            var hours = parseInt(timeParts[0]);
+            if (hours < 6 || (hours === 12 && timeParts[1] === "PM")) {
+                this.setCustomValidity('Please select a time after 6 AM.');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,116 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/signupbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem 9%;
+box-shadow: rgb(102, 101, 101);
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 1000;
+
+.logo{
+  font-size: 2rem;
+  color: rgb(8, 26, 71);
+  font-weight: bolder;
+
+  i{
+    color:rgb(238, 170, 34)
+  }
+}
+.navbar a{
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color:rgb(3, 14, 38);
+ 
+
+  &:hover{
+    color: rgb(246, 179, 46);
+  }
+
+}
+}
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    margin-top: 12%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 150%;
+    
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #051759;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #2cfb07;
+}
+
+.link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+.link a:hover {
+    color: #000;
+}
+
