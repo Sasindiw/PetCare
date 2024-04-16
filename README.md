@@ -57,6 +57,9 @@ admin to their inquiries. It serves as a centralized
 communication hub for tracking and managing interactions 
 between the client and the veterinary clinic.
 
+## Screenshots
+
+![Home page ](Images/home%20page.png)
 
 ## Installation
 
