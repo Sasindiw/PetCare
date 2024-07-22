@@ -1,6 +1,6 @@
-# PetCare - Vet Appointment Management System
+# Fuzz n Feathers - Vet Appointment Management System
 
-PetCare is a web-based application built with PHP for managing vet appointments for pets. This system simplifies the process of scheduling and organizing appointments for veterinary clinics, making it easier to manage patient information and appointment schedules.
+Fuzz n Feathers is a web-based application built with PHP for managing vet appointments for pets. This system simplifies the process of scheduling and organizing appointments for veterinary clinics, making it easier to manage patient information and appointment schedules.
 
 ## Features
 
