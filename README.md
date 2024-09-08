@@ -2,9 +2,13 @@
 
 Fuzz n Feathers is a web-based application built with PHP for managing vet appointments for pets. This system simplifies the process of scheduling and organizing appointments for veterinary clinics, making it easier to manage patient information and appointment schedules.
 
-![Demo](https://imgur.com/iD8JiLn.png) 
-![Demo](https://github.com/Sasindiw/PetCare/blob/main/about%20page.png?raw=true).
 
+<div style="display: flex; justify-content: space-between;">
+  <img src="(https://imgur.com/iD8JiLn.png)" alt="" width="400"/>
+  <img src="(https://github.com/Sasindiw/PetCare/blob/main/about%20page.png?raw=true)" alt="" width="400"/>
+  <img src="(https://github.com/Sasindiw/PetCare/blob/main/about%20page%201.png?raw=true)" alt="" width="400"/>
+    
+</div>
 ## Features
 
 ### Admin Features
