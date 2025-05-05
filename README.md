@@ -81,6 +81,4 @@ between the client and the veterinary clinic.
 - JavaScript
 - SQL
 
-## Contact
 
-For any inquiries, please contact [sasindiw@gmail.com](mailto:sasindiw@gmail.com).
